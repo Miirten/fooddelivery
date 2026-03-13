@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-
+    <!---Landing--->
     <main id="#landing">
         <section id="hero-section">
             <h1>Fast. Safe. Reliable.
@@ -33,6 +33,7 @@
             </h1>
         </section>
 
+        <!---Marketing--->
         <section id="marketing-materials">
             <div class="card">
                 <img src="images/deliveries.jpg" alt="deliveries">
@@ -65,19 +66,62 @@
                             refund process, ensuring that your experience with us remains positive and worry-free.
                         </p>
 
-
         </section>
 
+        <!---Questions-->
         <section id="questions">
             <h2>Common Questions</h2>
             <div id="accordion"></div>
         </section>
 
+        <!---Contact--->
+        <section id="contact">
+            <blockquote>
+                <h3>"I was blown away by the speed and efficiency of Cherry Deliveries. I recieved my package in less
+                    than 24 hours!"</h3>
+            </blockquote>
+            <p>John Doe</p>
 
+            <form method="POST">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text" placeholder="Enter your first name." required />
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text" placeholder="Enter your last name." required />
+                    </div>
+                </div>
 
-        <section id="contact"></section>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="general" selected>General</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="refund">Refund</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="first-name">Email</label>
+                        <input id="email" type="text" placeholder="Enter your email." required />
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <button>Submit</button>
+            </form>
+
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy Cacher's Deliveries 2024</p>
+    </footer>
 </body>
 
 </html>
