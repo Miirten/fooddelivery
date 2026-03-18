@@ -19,7 +19,6 @@ const qaItems = [
 
 
 const accordianDiv = document.getElementById("accordion")
-console.log()
 
 qaItems.forEach(qaItem => {
     const questionText = qaItem.question
@@ -29,13 +28,19 @@ qaItems.forEach(qaItem => {
 
     const questionDiv = document.createElement("div")
     questionDiv.classList.add("accordion-question") 
-    questionDiv.textContent = questionText
+    questionDiv.textContent = questionText;
 
     const answerDiv = document.createElement("div")
     answerDiv.classList.add("accordion-answer")
-    answerDiv.textContent = answerText
+    answerDiv.textContent = answerText;
 
-    questionDiv.appendChild(answerDiv)
+    questionDiv.appendChild(answerDiv);
+
+    questionDiv.addEventListener("click", () => {
+        questionDiv.classList.toggle("active");
+        answerDiv.classList.toggle("active");
+    });
 
     accordianDiv.appendChild(questionDiv)
-})
+});
+
